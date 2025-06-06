@@ -1,5 +1,5 @@
 # Ansible -Yaml: Yet another extensible Markup language
-# Ansible Collections - It a distribution format for Ansible and it consists roles, models, playbooks
+# Ansible Collections - It a distribution format for Ansible  it consists roles, models, playbooks
 # The below format is YAMl language where an Ansible tool would communicate to the Node/Component/API's
 
 - name: Sample
