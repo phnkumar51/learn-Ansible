@@ -2,44 +2,6 @@
 # Ansible Collections - It a distribution format for Ansible and it consists roles, models, playbooks
 # The below format is YAMl language where an Ansible tool would communicate to the Node/Component/API's
 
-  - name: frontend setup
-    hosts: all
-    tasks:
-      - name: Disable Default Nginx
-        ansible.builtin.shell: dnf module disable nginx -y
-      
-      - name: Enable Nginx
-        ansible.builtin.shell: dnf module enable nginx:1.24 -y
-
-      - name: Install Nginx
-        ansible.builtin.dnf:
-            name: nginx
-            state: installed
-
-          
-          
-
-  print_head Install Nginx
-  dnf install nginx -y &>>$log_file
-  
-  print_head copy Nginx Conf file
-  cp nginx.conf /etc/nginx/nginx.conf &>>$log_file
-  
-  print_head remove the old content in Nginx
-  rm -rf /usr/share/nginx/html/* &>>$log_file
-  
-  print_head Download Nginx content
-  curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend-v3.zip &>>$log_file
-  cd /usr/share/nginx/html >>/tmp/roboshop.log &>>$log_file
-  
-  print_head Extract Nginx
-  unzip /tmp/frontend.zip &>>$log_file
-  
-  print_head Restart Nginx\e
-  systemctl enable nginx &>>$log_file
-  systemctl restart nginx &>>$log_file
-
-
 - name: Sample
   hosts: all
   tasks:
