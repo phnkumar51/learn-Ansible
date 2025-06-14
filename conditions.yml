@@ -1,0 +1,15 @@
+- name: Conditions
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: X is greater than 20
+      ansible.builtin.debug:
+        msg: "X is greater than 20"
+
+- name: Conditions
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: X is greater than 20
+      ansible.builtin.debug:
+        msg: "X is greater than 20"
