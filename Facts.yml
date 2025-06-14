@@ -1,0 +1,6 @@
+- name: Facts
+  hosts: local
+  connection: local
+  tasks:
+     - name: Print
+       msg: {{ ansible distribution }}
