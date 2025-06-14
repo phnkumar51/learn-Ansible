@@ -1,6 +1,7 @@
 - name: Facts
-  hosts: local
+  hosts: localhost
   connection: local
   tasks:
-     - name: Print
-       msg: {{ ansible distribution }}
+     - name: Print a fact
+       ansible.builtin.debug:
+       msg: "{{ ansible_distribution }}"
