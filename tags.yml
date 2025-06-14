@@ -7,10 +7,6 @@
         msg: "Apple fruit"
         tags: fruit
 
-- name: Tags
-  hosts: localhost
-  connection: local
-  tasks:
     - name: Veg tag
       ansible.builtin.debug:
         msg: "Spinach veg"
