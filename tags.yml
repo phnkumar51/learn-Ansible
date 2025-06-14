@@ -1,0 +1,15 @@
+- name: Tags
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Fruit tag
+      ansible.builtin.debug:
+        msg: "Apple fruit"
+
+- name: Tags
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Veg tag
+      ansible.builtin.debug:
+        msg: "Spinach veg"
