@@ -4,4 +4,4 @@
   tasks:
    - name: Print a fact
      ansible.builtin.debug:
-       msg: "{{ ansible distribution }}"
+       msg: "{{ ansible_distribution }}"
