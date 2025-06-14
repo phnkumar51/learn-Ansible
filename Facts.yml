@@ -4,4 +4,4 @@
   tasks:
    - name: Print a fact
      ansible.builtin.debug:
-       msg: "{{ ansible_distribution }}"
+       msg: "{{ ansible_distribution_file_path }}"
