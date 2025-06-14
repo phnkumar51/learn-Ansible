@@ -1,0 +1,12 @@
+# We can assign a group of Inventory files in a single file or assign them individually
+
+192.31.106.5
+IP address
+
+[APP]
+app1.example.com
+app2.example.com
+
+[DB]
+db.example.com
+
