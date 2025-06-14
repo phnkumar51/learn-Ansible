@@ -1,7 +1,7 @@
 # We can assign a group of Inventory files in a single file or assign them individually
 
 192.31.106.5
-IP address
+host1.example.com
 
 [APP]
 app1.example.com
