@@ -2,6 +2,6 @@
   hosts: localhost
   connection: local
   tasks:
-     - name: Print a fact
-       ansible.builtin.debug:
+   - name: Print a fact
+     ansible.builtin.debug:
        msg: "{{ ansible_distribution }}"
